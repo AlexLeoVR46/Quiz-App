@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Questionnaire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_screen" translatesAutoresizingMaskIntoConstraints="NO" id="yNt-ms-uTG">
+                                <rect key="frame" x="60" y="163" width="294" height="249"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yNt-ms-uTG" secondAttribute="height" multiplier="98:83" id="80G-WL-7gr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какой ты покемон ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dP-3G-Tlh">
+                                <rect key="frame" x="60" y="457" width="294" height="41.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="31"/>
+                                <color key="textColor" red="0.7468305230140686" green="0.93672037124633789" blue="0.29780533909797668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.20711576940000001" green="0.46896970269999999" blue="0.60785889630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="3" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb6-6U-BQJ">
+                                <rect key="frame" x="60" y="582.5" width="294" height="41"/>
+                                <color key="backgroundColor" red="0.18872082233428955" green="0.29167473316192627" blue="0.47845011949539185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="taX-pc-Y95"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                <color key="tintColor" red="0.87988364696502686" green="0.97984999418258667" blue="0.39197516441345215" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="СТАРТ">
+                                    <color key="titleColor" red="0.7468305230140686" green="0.93672037124633789" blue="0.29780533909797668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="d47-85-Lqy" kind="show" id="AlU-vk-JF7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4513741135597229" green="0.57759940624237061" blue="0.81178879737854004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="yNt-ms-uTG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="0tv-0X-1vZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yNt-ms-uTG" secondAttribute="trailing" constant="60" id="42m-jy-oLG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5dP-3G-Tlh" secondAttribute="trailing" constant="60" id="Gmh-E0-NoL"/>
+                            <constraint firstItem="vb6-6U-BQJ" firstAttribute="top" secondItem="5dP-3G-Tlh" secondAttribute="bottom" constant="84" id="K2c-M3-1Xo"/>
+                            <constraint firstItem="vb6-6U-BQJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="KLm-Ik-bFQ"/>
+                            <constraint firstItem="5dP-3G-Tlh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Qtc-5g-B8r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vb6-6U-BQJ" secondAttribute="trailing" constant="60" id="fvx-r4-Kpw"/>
+                            <constraint firstItem="yNt-ms-uTG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="myY-Ok-Fuv"/>
+                            <constraint firstItem="5dP-3G-Tlh" firstAttribute="top" secondItem="yNt-ms-uTG" secondAttribute="bottom" constant="45" id="qPQ-FW-n3W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelStartButton" destination="vb6-6U-BQJ" id="lOV-rq-VbY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650.72463768115949" y="112.5"/>
+        </scene>
+        <!--Выберите только один из вариантов-->
+        <scene sceneID="4hg-co-xGg">
+            <objects>
+                <viewController id="Fbl-2U-FPq" customClass="MainViewController" customModule="Questionnaire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lqo-fW-EIx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="ksR-Zd-Mk7">
+                                <rect key="frame" x="20" y="277" width="374" height="199"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kVm-RQ-MN7">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yi6-vd-oVK">
+                                                <rect key="frame" x="0.0" y="0.0" width="317" height="31"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                                <color key="textColor" red="0.85189630494105029" green="1" blue="0.40067640331066956" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BY6-jl-YeM">
+                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.20000000000000001" height="0.20000000000000001"/>
+                                                <color key="tintColor" red="0.3851054078478382" green="0.49760556516700877" blue="0.70430571657752017" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="onTintColor" red="0.18872082233428955" green="0.29167473316192627" blue="0.47845011949539185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="thumbTintColor" red="0.7468305230140686" green="0.93672037124633789" blue="0.29780533909797668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GGD-uX-2Hv">
+                                        <rect key="frame" x="0.0" y="42" width="374" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLj-1W-0nf">
+                                                <rect key="frame" x="0.0" y="0.0" width="317" height="31"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                                <color key="textColor" red="0.85096447602261049" green="0.99890617095879497" blue="0.40023813182460277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qFX-HF-VBP">
+                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                                <color key="tintColor" red="0.39349268944154769" green="0.50844300840359324" blue="0.71964492047498674" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="onTintColor" red="0.18872082233428955" green="0.29167473316192627" blue="0.47845011949539185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="thumbTintColor" red="0.74683052299999997" green="0.93672037119999996" blue="0.29780533910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NYr-ex-cct">
+                                        <rect key="frame" x="0.0" y="84" width="374" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXa-ca-zwP">
+                                                <rect key="frame" x="0.0" y="0.0" width="317" height="31"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                                <color key="textColor" red="0.85189630494105029" green="1" blue="0.40067640331066956" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sJG-XG-Nru">
+                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                                <color key="tintColor" red="0.37189528572962022" green="0.48053639358799438" blue="0.68014618951051975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="onTintColor" red="0.18872082233428955" green="0.29167473316192627" blue="0.47845011949539185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="thumbTintColor" red="0.74683052299999997" green="0.93672037119999996" blue="0.29780533910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3x5-s2-Ix1">
+                                        <rect key="frame" x="0.0" y="126" width="374" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHo-2z-jBh">
+                                                <rect key="frame" x="0.0" y="0.0" width="317" height="31"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                                <color key="textColor" red="0.85189630494105029" green="1" blue="0.40067640331066956" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n4r-6B-DTY">
+                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                                <color key="tintColor" red="0.37827982706282687" green="0.48878603961658951" blue="0.69182265228426409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="onTintColor" red="0.18872082230000001" green="0.29167473319999998" blue="0.47845011949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="thumbTintColor" red="0.74683052299999997" green="0.93672037119999996" blue="0.29780533910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yv1-yV-aS3">
+                                        <rect key="frame" x="0.0" y="168" width="374" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3n7-fQ-zRx">
+                                                <rect key="frame" x="0.0" y="0.0" width="317" height="31"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                                <color key="textColor" red="0.85189630494105029" green="1" blue="0.40067640331066956" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rH6-8v-2IX">
+                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.5" height="0.59999999999999998"/>
+                                                <color key="tintColor" red="0.37661014826180433" green="0.48662860051939955" blue="0.68876903553299496" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="onTintColor" red="0.18872082230000001" green="0.29167473319999998" blue="0.47845011949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="thumbTintColor" red="0.74683052299999997" green="0.93672037119999996" blue="0.29780533910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q1i-VK-ASt">
+                                <rect key="frame" x="20" y="655" width="374" height="2"/>
+                                <color key="progressTintColor" red="0.21422499418258667" green="0.28867951035499573" blue="0.41569939255714417" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="trackTintColor" red="0.74683052299999997" green="0.93672037119999996" blue="0.29780533910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWE-eN-Qgn">
+                                <rect key="frame" x="20" y="528" width="374" height="41"/>
+                                <color key="backgroundColor" red="0.21422499418258667" green="0.28867951035499573" blue="0.41569939255714417" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                <size key="titleShadowOffset" width="3" height="-1"/>
+                                <state key="normal" title=" Ответить">
+                                    <color key="titleColor" red="0.7468305230140686" green="0.93672037124633789" blue="0.29780533909797668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="0.1119543985" green="0.20601052049999999" blue="0.65101617570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="multipleAnswerButtonPressed:" destination="Fbl-2U-FPq" eventType="touchUpInside" id="VlT-AD-OAo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3w-ap-J6o">
+                                <rect key="frame" x="20" y="117" width="374" height="124.5"/>
+                                <color key="backgroundColor" red="0.21422499418258667" green="0.28867951035499573" blue="0.41569939255714417" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <color key="textColor" red="0.4513741135597229" green="0.57759940624237061" blue="0.81178879737854004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqM-Fx-7gZ">
+                                <rect key="frame" x="194" y="688" width="36" height="26.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <color key="textColor" red="0.74683052299999997" green="0.93672037119999996" blue="0.29780533910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4513741135597229" green="0.57759940624237061" blue="0.81178879737854004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="oWE-eN-Qgn" firstAttribute="top" secondItem="ksR-Zd-Mk7" secondAttribute="bottom" constant="52" id="Cgp-EK-Zke"/>
+                            <constraint firstItem="oWE-eN-Qgn" firstAttribute="leading" secondItem="yrd-dL-vhB" secondAttribute="leading" constant="20" id="DbX-jP-z3x"/>
+                            <constraint firstItem="H3w-ap-J6o" firstAttribute="leading" secondItem="yrd-dL-vhB" secondAttribute="leading" constant="20" id="IaH-RA-mJ9"/>
+                            <constraint firstItem="yrd-dL-vhB" firstAttribute="trailing" secondItem="H3w-ap-J6o" secondAttribute="trailing" constant="20" id="Jc0-Pb-hMh"/>
+                            <constraint firstItem="ksR-Zd-Mk7" firstAttribute="top" secondItem="H3w-ap-J6o" secondAttribute="bottom" constant="35.5" id="Pbr-XY-ClQ"/>
+                            <constraint firstItem="CqM-Fx-7gZ" firstAttribute="top" secondItem="q1i-VK-ASt" secondAttribute="bottom" constant="31" id="Voj-Et-zTx"/>
+                            <constraint firstItem="ksR-Zd-Mk7" firstAttribute="leading" secondItem="yrd-dL-vhB" secondAttribute="leading" constant="20" id="agx-qH-O19"/>
+                            <constraint firstItem="oWE-eN-Qgn" firstAttribute="centerX" secondItem="ksR-Zd-Mk7" secondAttribute="centerX" id="bkS-I2-yEe"/>
+                            <constraint firstItem="yrd-dL-vhB" firstAttribute="trailing" secondItem="ksR-Zd-Mk7" secondAttribute="trailing" constant="20" id="hFw-XH-cst"/>
+                            <constraint firstItem="q1i-VK-ASt" firstAttribute="top" secondItem="oWE-eN-Qgn" secondAttribute="bottom" constant="86" id="i8C-zI-FZ2"/>
+                            <constraint firstItem="CqM-Fx-7gZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yrd-dL-vhB" secondAttribute="leading" id="klB-Ub-Wp2"/>
+                            <constraint firstItem="yrd-dL-vhB" firstAttribute="trailing" secondItem="CqM-Fx-7gZ" secondAttribute="trailing" constant="184" id="mF1-wu-6Br"/>
+                            <constraint firstItem="yrd-dL-vhB" firstAttribute="trailing" secondItem="q1i-VK-ASt" secondAttribute="trailing" constant="20" id="ssd-bJ-xxn"/>
+                            <constraint firstItem="H3w-ap-J6o" firstAttribute="top" secondItem="yrd-dL-vhB" secondAttribute="top" constant="29" id="t7c-9m-JMW"/>
+                            <constraint firstItem="q1i-VK-ASt" firstAttribute="leading" secondItem="yrd-dL-vhB" secondAttribute="leading" constant="20" id="tgu-xo-nvQ"/>
+                            <constraint firstItem="ksR-Zd-Mk7" firstAttribute="centerY" secondItem="lqo-fW-EIx" secondAttribute="centerY" constant="-71.5" id="xqX-oz-O3P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yrd-dL-vhB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Выберите только один из вариантов" id="BWQ-ue-UNk"/>
+                    <connections>
+                        <outlet property="fifthQuestionLbl" destination="3n7-fQ-zRx" id="Brd-QS-xfT"/>
+                        <outlet property="fifthSwitch" destination="rH6-8v-2IX" id="USG-8p-Eqj"/>
+                        <outlet property="firstQuestionLbl" destination="Yi6-vd-oVK" id="0VU-YY-dHN"/>
+                        <outlet property="firstSwitch" destination="BY6-jl-YeM" id="fas-uZ-dM5"/>
+                        <outlet property="fourthQuestionLbl" destination="WHo-2z-jBh" id="3Jf-0V-fYs"/>
+                        <outlet property="fourthSwitch" destination="n4r-6B-DTY" id="bfL-CM-7FT"/>
+                        <outlet property="mainQuestion" destination="H3w-ap-J6o" id="iw3-xR-JOm"/>
+                        <outlet property="numberOfQuestion" destination="CqM-Fx-7gZ" id="rlP-FF-ScM"/>
+                        <outlet property="progressBar" destination="q1i-VK-ASt" id="him-d6-SY2"/>
+                        <outlet property="replyButton" destination="oWE-eN-Qgn" id="sxq-uE-RPf"/>
+                        <outlet property="secondQuestionLbl" destination="JLj-1W-0nf" id="WxW-a2-a5j"/>
+                        <outlet property="secondSwitch" destination="qFX-HF-VBP" id="Mzq-4G-dhb"/>
+                        <outlet property="thirdQuestionLbl" destination="WXa-ca-zwP" id="87r-c9-ucv"/>
+                        <outlet property="thirdSwitch" destination="sJG-XG-Nru" id="PTm-dA-4b8"/>
+                        <segue destination="lew-Qz-PsI" kind="show" identifier="ResultSegue" id="EKt-4f-LR7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIM-bT-A8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2095.6521739130435" y="112.5"/>
+        </scene>
+        <!--Результат-->
+        <scene sceneID="VZr-3c-Hjm">
+            <objects>
+                <viewController id="lew-Qz-PsI" customClass="ResultViewController" customModule="Questionnaire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qVG-Wb-SPo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="kjO-bW-a4Q">
+                                <rect key="frame" x="20" y="500" width="374" height="106"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ты - Pikachy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30Z-tn-Vg2">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                        <color key="textColor" red="0.7468305230140686" green="0.93672037124633789" blue="0.29780533909797668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Потому что..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mac-ss-Tvq">
+                                        <rect key="frame" x="0.0" y="78.5" width="374" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                        <color key="textColor" red="0.14581803966340737" green="0.32202808625552981" blue="0.70185596446700504" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6oZ-8g-KlP">
+                                <rect key="frame" x="107" y="172" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6oZ-8g-KlP" secondAttribute="height" multiplier="1:1" id="8Y1-ZG-GRq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4513741135597229" green="0.57759940624237061" blue="0.81178879737854004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6oZ-8g-KlP" firstAttribute="top" secondItem="o6t-Aw-hxs" secondAttribute="top" constant="84" id="7ob-QW-gP9"/>
+                            <constraint firstItem="kjO-bW-a4Q" firstAttribute="centerY" secondItem="qVG-Wb-SPo" secondAttribute="centerY" constant="105" id="AyS-bT-RTd"/>
+                            <constraint firstItem="o6t-Aw-hxs" firstAttribute="trailing" secondItem="kjO-bW-a4Q" secondAttribute="trailing" constant="20" id="K9B-Kp-XVV"/>
+                            <constraint firstItem="o6t-Aw-hxs" firstAttribute="trailing" secondItem="6oZ-8g-KlP" secondAttribute="trailing" constant="107" id="WZQ-g1-gEf"/>
+                            <constraint firstItem="6oZ-8g-KlP" firstAttribute="leading" secondItem="o6t-Aw-hxs" secondAttribute="leading" constant="107" id="bSy-Dc-16O"/>
+                            <constraint firstItem="kjO-bW-a4Q" firstAttribute="leading" secondItem="o6t-Aw-hxs" secondAttribute="leading" constant="20" id="i3u-2q-Y5H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o6t-Aw-hxs"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Результат" id="cwx-Bk-aDS">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="3Tb-x4-pcQ">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="78U-Cq-6YC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="30Z-tn-Vg2" id="VRH-hg-Nr0"/>
+                        <outlet property="resultDefinitionLabel" destination="mac-ss-Tvq" id="2B5-Gt-yID"/>
+                        <outlet property="resultImageLabel" destination="6oZ-8g-KlP" id="RZn-Mg-lXf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dnc-Hl-IVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2794.202898550725" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x0g-NV-Xqs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d47-85-Lqy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AQF-BS-0jn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.30648472905158997" green="0.381265789270401" blue="0.81180316209793091" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.4513741135597229" green="0.57759940624237061" blue="0.81178879737854004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                            <color key="textColor" red="0.74683052299999997" green="0.93672037119999996" blue="0.29780533910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fbl-2U-FPq" kind="relationship" relationship="rootViewController" id="iw7-SV-bsJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TKq-Gj-dci" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_screen" width="1024" height="1024"/>
+    </resources>
+    <color key="tintColor" red="0.99710065126419067" green="0.99562543630599976" blue="0.40373441576957703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>
