@@ -40,19 +40,22 @@ class MainViewController: UIViewController {
         updateUI()
         
         replyButton.layer.cornerRadius = 10
+        
         progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 8)
-
+        
         progressBar.layer.cornerRadius = 8
         progressBar.clipsToBounds = true
         progressBar.layer.sublayers![1].cornerRadius = 8
         progressBar.subviews[1].clipsToBounds = true
         
-      mainQuestion.layer.cornerRadius = 10
+        mainQuestion.layer.cornerRadius = 10
+        mainQuestion.layer.borderWidth = 2
+        mainQuestion.layer.borderColor = #colorLiteral(red: 0.192917943, green: 0.2913616896, blue: 0.426486969, alpha: 1)
     }
     
     
     
-    
+    // array with questions and answers
     var questions: [Question] = [
         
         Question(
@@ -106,24 +109,26 @@ class MainViewController: UIViewController {
             ]
         )
     ]
+    
+    
     var questionIndex = 0
     var answersChosen: [Answer] = []
     
+    //func
     func updateUI() {
+        
         let currentQuestion = questions[questionIndex]
         let currentAnswers = currentQuestion.answers
-        let totalProgress = Float(questionIndex) /
-            Float(questions.count)
+        let totalProgress = Float(questionIndex) / Float(questions.count)
         
-       numberOfQuestion.text = "\(questionIndex+1)/5"
-       // navigationItem.title = "Вопрос - \(questionIndex+1)"
+        numberOfQuestion.text = "\(questionIndex+1)/5"
         mainQuestion.text = currentQuestion.text
-        progressBar.setProgress(totalProgress, animated:
-            true)
-      
+        progressBar.setProgress(totalProgress, animated: true)
         updateMultipleStack(using: currentAnswers)
     }
     
+    
+    //func
     @IBAction func multipleAnswerButtonPressed(_ sender: Any) {
         let currentAnswers = questions[questionIndex].answers
         
@@ -146,8 +151,9 @@ class MainViewController: UIViewController {
         nextQuestion()
     }
     
+    //func
     func updateMultipleStack(using answers: [Answer]) {
-      
+        
         firstSwitch.isOn = false
         secondSwitch.isOn = false
         thirdSwitch.isOn = false
@@ -160,7 +166,7 @@ class MainViewController: UIViewController {
         fifthQuestionLbl.text = answers[4].text
     }
     
-    
+    //func that update curren question to next
     func nextQuestion() {
         questionIndex += 1
         

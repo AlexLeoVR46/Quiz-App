@@ -25,15 +25,14 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какой ты покемон ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dP-3G-Tlh">
-                                <rect key="frame" x="60" y="457" width="294" height="41.5"/>
+                                <rect key="frame" x="60" y="457" width="294" height="40.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="31"/>
                                 <color key="textColor" red="0.7468305230140686" green="0.93672037124633789" blue="0.29780533909797668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.20711576940000001" green="0.46896970269999999" blue="0.60785889630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="shadowOffset" width="3" height="-1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb6-6U-BQJ">
-                                <rect key="frame" x="60" y="582.5" width="294" height="41"/>
+                                <rect key="frame" x="60" y="581.5" width="294" height="41"/>
                                 <color key="backgroundColor" red="0.18872082233428955" green="0.29167473316192627" blue="0.47845011949539185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="taX-pc-Y95"/>
@@ -171,18 +170,17 @@
                                 </subviews>
                             </stackView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q1i-VK-ASt">
-                                <rect key="frame" x="20" y="655" width="374" height="2"/>
+                                <rect key="frame" x="20" y="660" width="374" height="2"/>
                                 <color key="progressTintColor" red="0.21422499418258667" green="0.28867951035499573" blue="0.41569939255714417" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="trackTintColor" red="0.74683052299999997" green="0.93672037119999996" blue="0.29780533910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWE-eN-Qgn">
-                                <rect key="frame" x="20" y="528" width="374" height="41"/>
-                                <color key="backgroundColor" red="0.21422499418258667" green="0.28867951035499573" blue="0.41569939255714417" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                <rect key="frame" x="20" y="528" width="374" height="46"/>
+                                <color key="backgroundColor" red="0.18872082233428955" green="0.29167473316192627" blue="0.47845011949539185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
                                 <size key="titleShadowOffset" width="3" height="-1"/>
                                 <state key="normal" title=" Ответить">
                                     <color key="titleColor" red="0.7468305230140686" green="0.93672037124633789" blue="0.29780533909797668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="titleShadowColor" red="0.1119543985" green="0.20601052049999999" blue="0.65101617570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="multipleAnswerButtonPressed:" destination="Fbl-2U-FPq" eventType="touchUpInside" id="VlT-AD-OAo"/>
@@ -190,13 +188,12 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3w-ap-J6o">
                                 <rect key="frame" x="20" y="117" width="374" height="124.5"/>
-                                <color key="backgroundColor" red="0.21422499418258667" green="0.28867951035499573" blue="0.41569939255714417" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
-                                <color key="textColor" red="0.4513741135597229" green="0.57759940624237061" blue="0.81178879737854004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.17348968980000001" green="0.22305777669999999" blue="0.26667094229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqM-Fx-7gZ">
-                                <rect key="frame" x="194" y="688" width="36" height="26.5"/>
+                                <rect key="frame" x="194" y="693" width="36" height="26.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
                                 <color key="textColor" red="0.74683052299999997" green="0.93672037119999996" blue="0.29780533910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -266,7 +263,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Потому что..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mac-ss-Tvq">
                                         <rect key="frame" x="0.0" y="78.5" width="374" height="27.5"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
-                                        <color key="textColor" red="0.14581803966340737" green="0.32202808625552981" blue="0.70185596446700504" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.18872082233428955" green="0.29167473316192627" blue="0.47845011949539185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>

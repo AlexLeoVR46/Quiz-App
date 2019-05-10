@@ -25,9 +25,9 @@ class ResultViewController: UIViewController {
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
-    
+    // Func that calculate result from Quiz
     func calculatePersonalityResult() {
        
         var frequencyOfAnswers: [PokemonType:Int] = [:]
